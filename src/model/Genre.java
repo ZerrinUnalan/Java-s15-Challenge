@@ -2,6 +2,7 @@ package model;
 
 public enum Genre {
     ART,
+    BIOGRAPHY,
     EDUCATION,
     CLASSICALENGLISHLITERATURE,
     CLASSICALJAPANESELITERATURE,
