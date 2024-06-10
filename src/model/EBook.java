@@ -17,5 +17,25 @@ public class EBook extends Book {
         this.file_size = file_size;
         this.system_compatibility = system_compatibility;
     }
+
+    public double getFile_size() {
+        return file_size;
+    }
+
+    public void setFile_size(double file_size) {
+        this.file_size = file_size;
+    }
+
+    public String getSystem_compatibility() {
+        return system_compatibility;
+    }
+
+    public void setSystem_compatibility(String system_compatibility) {
+        this.system_compatibility = system_compatibility;
+    }
+
+
+    ///BURAYI GÜNCELLEEEE
+
 }
 
