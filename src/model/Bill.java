@@ -2,14 +2,14 @@ package model;
 
 import java.util.Date;
 
-public class BookManager {
+public class Bill {
     private int readerId;
     private int bookId;
     private Date borrowDate;
     private Date returnDate;
     private double fineAmount;
 
-    public BookManager(int readerId, int bookId, Date borrowDate, Date returnDate, double fineAmount) {
+    public Bill(int readerId, int bookId, Date borrowDate, Date returnDate, double fineAmount) {
         this.readerId = readerId;
         this.bookId = bookId;
         this.borrowDate = borrowDate;

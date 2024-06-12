@@ -1,22 +1,20 @@
 package Resource;
 
-import model.Author;
 import model.Book;
-import model.Genre;
 import model.Reader;
 
 import java.util.List;
 
 public interface BookResource {
     void addBook(Book book);
-    Book getBookByIsbn(int id);
+    Book getBookById(int id);
     List<Book> getBooksByTitle(String title);
     List<Book> getBookByAuthor(String author);
-    void updateBook(Book book);
-    void deleteBook(Book book);
+    void updateBook(int bookId, Book book);
+    void deleteBook(int book);
     void deleteBookByTitle(Book book);
-    List<Book> getBooksByCategory(Genre genre);
-    List<Book> getBooksByAuthor(Author author);
+    <Genre> List<Book> getBooksByGenre(Genre genre);
+    <Author> List<Book> getBooksByAuthor(Author author);
     void borrowBook(Reader reader, Book book);
     void returnBook(Reader reader, Book book);
     List<Book> getAllBooks();
