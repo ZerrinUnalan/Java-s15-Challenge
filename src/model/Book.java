@@ -14,7 +14,7 @@ public class Book {
     private Reader borrower;
     private List<CommentRating> comment_rating = new ArrayList<>();
 
-    public Book(int book_id, String title, Author author, Genre genre, boolean isBorrowed, double price, Reader borrower, List<CommentRating> comment_rating) {
+    public Book(int book_isbn, String title, Author author, Genre genre, boolean isBorrowed, double price, Reader borrower, List<CommentRating> comment_rating) {
         this.book_isbn = book_isbn;
         this.title = title;
         this.author = author;

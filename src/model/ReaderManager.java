@@ -19,11 +19,16 @@ public class ReaderManager implements ReaderResource {
 
     @Override
     public boolean checkReader(String email, String password) {
-        return false;
+        Reader reader = database.getReaderByEmail(email);
+        return reader != null && reader.getReader_password().equals(password);
     }
 
     @Override
     public void deleteReader(int readerId) {
-
+        database.deleteUser(readerId);
+    }
+    public boolean isEmailRegisteredBefore(String email){
+        Reader reader= database.getReaderByEmail(email);
+        return reader != null;
     }
 }

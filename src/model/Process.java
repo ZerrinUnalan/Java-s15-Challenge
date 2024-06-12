@@ -10,12 +10,12 @@ public class Process {
     private EBook ebook;
 
     private boolean returned;
-    private LocalDateTime borrowDate;
+    private final LocalDateTime borrowDate;
     private LocalDateTime returnDate;
     private double invoiceAmount;
 
-    public Process(int newTransactionId, Reader reader, Book book, EBook ebook, boolean returned, LocalDateTime borrowDate) {
-        this.id = newTransactionId;
+    public Process(int newProcessId, Reader reader, Book book, EBook ebook, boolean returned, LocalDateTime borrowDate) {
+        this.id = newProcessId;
         this.reader = reader;
         this.book = book;
         this.ebook = ebook;
@@ -23,7 +23,7 @@ public class Process {
         this.borrowDate = LocalDateTime.now();
     }
 
-        private int generateNewTransactionId() {
+        private int generateNewProcessId() {
             return 0;
         }
 
@@ -31,8 +31,7 @@ public class Process {
             Duration loanDuration = Duration.between(borrowDate, returnDate);
             long days = loanDuration.toDays();
             double bookPrice = book.getPrice();
-            double invoiceAmount = days * bookPrice;
-            return invoiceAmount;
+            return days * bookPrice;
         }
 
         public void markReturned() {
@@ -93,5 +92,4 @@ public class Process {
 
 
     //EBOOK İÇİN GÜNCELLENECEK
-}
 }

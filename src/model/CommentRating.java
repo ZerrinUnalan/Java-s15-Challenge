@@ -17,6 +17,7 @@ public class CommentRating {
         return comment;
     }
 
+
     @Override
     public String toString() {
         return "CommentRating{" +
