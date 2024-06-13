@@ -1,4 +1,4 @@
-package model;
+package com.cremuselibrary.model;
 
 public class Book {
     private final int id;
@@ -37,5 +37,16 @@ public class Book {
 
     public void setAvailable(boolean available) {
         isAvailable = available;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", genre='" + genre + '\'' +
+                ", isAvailable=" + isAvailable +
+                '}';
     }
 }

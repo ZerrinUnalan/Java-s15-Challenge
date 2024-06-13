@@ -1,7 +1,7 @@
 
-package Data;
+package com.cremuselibrary.data;
 
-import model.Book;
+import com.cremuselibrary.model.Book;
 
 import java.util.HashMap;
 import java.util.Map;

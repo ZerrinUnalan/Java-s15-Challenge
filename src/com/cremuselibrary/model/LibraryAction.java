@@ -1,4 +1,4 @@
-package model;
+package com.cremuselibrary.model;
 
 public interface LibraryAction {
     void addBook(Book book);

@@ -1,4 +1,4 @@
-package model;
+package com.cremuselibrary.model;
 
 import java.util.Date;
 
@@ -35,5 +35,16 @@ public class BookManager {
 
     public double getFineAmount() {
         return fineAmount;
+    }
+
+    @Override
+    public String toString() {
+        return "BookManager{" +
+                "readerId=" + readerId +
+                ", bookId=" + bookId +
+                ", borrowDate=" + borrowDate +
+                ", returnDate=" + returnDate +
+                ", fineAmount=" + fineAmount +
+                '}';
     }
 }

@@ -1,11 +1,11 @@
-import Data.Books;
-import Data.Readers;
-import model.*;
-import Resource.BookResource;
-import Resource.BillResource;
-import Resource.LibraryResource;
-import Resource.ReaderResource;
-import ReaderInterface.LibraryApplication;
+import com.cremuselibrary.data.Books;
+import com.cremuselibrary.data.Readers;
+import com.cremuselibrary.model.*;
+import com.cremuselibrary.resource.BookResource;
+import com.cremuselibrary.resource.BillResource;
+import com.cremuselibrary.resource.LibraryResource;
+import com.cremuselibrary.resource.ReaderResource;
+import com.cremuselibrary.readerinterface.LibraryApplication;
 
 import java.util.*;
 
@@ -88,8 +88,8 @@ public class Main {
             }
         };
         BillResource billResource=new BillResource(bills,library);
-        LibraryResource libraryResource=new LibraryResource(library);
-        ReaderResource readerResource=new ReaderResource(library);
+        LibraryResource libraryResource=new LibraryResource();
+        ReaderResource readerResource=new ReaderResource();
 
         LibraryApplication console=new LibraryApplication(bookResource,readerResource,libraryResource,billResource);
 

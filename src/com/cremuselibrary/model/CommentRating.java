@@ -1,4 +1,4 @@
-package model;
+package com.cremuselibrary.model;
 
 public class CommentRating {
     private int rating;

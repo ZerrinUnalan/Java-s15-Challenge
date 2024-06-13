@@ -1,6 +1,6 @@
-package Data;
+package com.cremuselibrary.data;
 
-import model.Reader;
+import com.cremuselibrary.model.Reader;
 
 import java.util.ArrayList;
 import java.util.List;

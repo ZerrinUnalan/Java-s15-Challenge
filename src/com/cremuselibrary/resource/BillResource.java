@@ -1,11 +1,10 @@
 
-package Resource;
+package com.cremuselibrary.resource;
 
-import model.Bill;
-import model.Library;
-import model.Reader;
+import com.cremuselibrary.model.Bill;
+import com.cremuselibrary.model.Library;
+import com.cremuselibrary.model.Reader;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -17,6 +16,10 @@ public class BillResource {
     public BillResource(List<Bill> bills, Library library) {
         this.bills = bills;
         this.library = library;
+    }
+
+    public BillResource() {
+
     }
 
     public boolean canReaderBorrowBooks() {

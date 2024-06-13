@@ -1,4 +1,4 @@
-package model;
+package com.cremuselibrary.model;
 
 public class Librarian extends Reader{
     public Librarian(int id, String name) {

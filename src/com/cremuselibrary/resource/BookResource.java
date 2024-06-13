@@ -1,7 +1,7 @@
-package Resource;
+package com.cremuselibrary.resource;
 
-import model.Book;
-import model.Reader;
+import com.cremuselibrary.model.Book;
+import com.cremuselibrary.model.Reader;
 
 import java.util.List;
 

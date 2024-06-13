@@ -1,13 +1,12 @@
-package Resource;
+package com.cremuselibrary.resource;
 
-import model.Library;
-import model.Reader;
+import com.cremuselibrary.model.Library;
+import com.cremuselibrary.model.Reader;
 
 public class ReaderResource {
-    private final Library library;
+    private Library library;
 
-    public ReaderResource(Library library) {
-        this.library = library;
+    public ReaderResource() {
     }
 
     public void addReader(Reader reader){

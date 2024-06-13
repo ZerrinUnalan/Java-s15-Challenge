@@ -1,4 +1,4 @@
-package model;
+package com.cremuselibrary.model;
 
 import java.util.List;
 import java.util.Map;
